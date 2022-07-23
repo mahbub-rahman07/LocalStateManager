@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                 if(eventBottom.hasEvent){
                     Log.e(TAG, "observeNow: has eventBottom event: ${eventBottom.state.name}: ${eventBottom.data}")
                     binding.bottomTv.text = "${eventBottom.data}"
+                    binding.bottomTv.setTextColor(Color.GREEN)
                 }
                 Log.e(TAG, "observeNow: events: ${eventTop.state.name}: ${eventTop.data}")
             }
